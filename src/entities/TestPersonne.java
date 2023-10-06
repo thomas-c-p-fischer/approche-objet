@@ -28,6 +28,8 @@ public class TestPersonne {
 		System.out.println(mrX.getNom());
 		mrX.setNom("Elliot");
 		mrY.setPrenom("Billy");
+		System.out.println(mrX);
+		System.out.println(mrY);
 	}
 
 }

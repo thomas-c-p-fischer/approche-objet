@@ -11,7 +11,12 @@ public class Personne{
 		adresse = adr;
 	}
 	 
-	 public void afficherNomMajPrenom(String name, String firstName) {
+	 @Override
+	public String toString() {
+		return "Personne [nom=" + nom + ", prenom=" + prenom + ", adresse=" + adresse + "]";
+	}
+
+	public void afficherNomMajPrenom(String name, String firstName) {
 		 System.out.println("NOM : " + name.toUpperCase() + ", Prénom : " + firstName);
 	 }
 	 
@@ -38,5 +43,7 @@ public class Personne{
 	 public AdressePostale getAdresse() {
 		 return this.adresse;
 	 }
+	 
+	 
 
 }
