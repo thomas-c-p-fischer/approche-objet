@@ -10,6 +10,7 @@ public class TestPersonne {
 		int codePostallyn = 34000;
 		String citylyn = "Lyon";
 		AdressePostale lyon = new AdressePostale(numRuelyn, nomRuelyn, codePostallyn, citylyn);
+		
 		String name1 = "Isidor";
 		String surname1 = "Jules";
 		int numRueOrl = 17;
@@ -17,8 +18,16 @@ public class TestPersonne {
 		int codePostalOrl = 45240;
 		String cityOrl = "Orléans";
 		AdressePostale orleans = new AdressePostale(numRueOrl, nomRueOrl, codePostalOrl, cityOrl);
+		
 		Personne mrX = new Personne(name, surname, lyon);
 		Personne mrY = new Personne(name1, surname1, orleans);
+		
+		mrX.afficherNomMajPrenom(surname1, name1);
+		mrY.setAdresse(orleans);
+		System.out.println(mrY.getPrenom());
+		System.out.println(mrX.getNom());
+		mrX.setNom("Elliot");
+		mrY.setPrenom("Billy");
 	}
 
 }
