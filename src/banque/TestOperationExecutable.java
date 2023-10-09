@@ -28,11 +28,9 @@ public class TestOperationExecutable {
 		operations[3] = new Credit(dateOpCredit2, montantOpCredit2);
 
 		double montantTotalDesOperations = 0;
-		double montantOperationsAdditionne = 0;
-		for (int i = 0; i < tailleTableau; i++) {
-			System.out.println(operations[i] + operations[i].getType());
-			montantOperationsAdditionne = operations[i].montantDebit(operations[i].getMontantOperation(), operations[i].getType());
-			montantTotalDesOperations += montantOperationsAdditionne;
+		for (Operation operation : operations) {
+			montantTotalDesOperations = operation.montantDebitCredit(montantTotalDesOperations);
+			System.out.println(operation);
 		}
 		System.out.println("Le montant total des Operations est de : " + montantTotalDesOperations + "€.");
 	}

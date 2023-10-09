@@ -10,21 +10,14 @@ public class Credit extends Operation {
 		super(dateOperation, montantOperation);
 	}
 
-	@Override
-	public String toString() {
-		return "Credit [" + super.toString() + "]";
-	}
-	
 	public String getType() {
 		String typeOperationCredit = "CREDIT";
 		return typeOperationCredit; 
 		
 	}
 	
-	public double montantDebit(double montantOperation, String type) {
-		if(type == "DEBIT") {
-			montantOperation = -Math.abs(montantOperation);
-		}
-		return montantOperation;
+	public double montantDebitCredit(double montantOperation) {
+		
+		return montantOperation + getMontantOperation();
 	}
 }

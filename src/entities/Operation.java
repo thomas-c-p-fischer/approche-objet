@@ -16,12 +16,12 @@ public abstract class Operation {
 	
 	@Override
 	public String toString() {
-		return "Operation [dateOperation=" + dateOperation + ", montantOperation=" + montantOperation + "]";
+		return "Operation [type= " + getType() + ", dateOperation= " + dateOperation + ", montantOperation= " + montantOperation + "]";
 	}
 	
 	public abstract String getType();
 	
-	public abstract double montantDebit(double montantOperation, String type);
+	public abstract double montantDebitCredit(double montantOperation);
 	
 	/**
 	 * @return the dateOperation
