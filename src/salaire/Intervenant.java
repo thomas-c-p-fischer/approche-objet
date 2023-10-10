@@ -16,4 +16,22 @@ public abstract class Intervenant {
 	
 	public abstract double getSalaire();
 	
+	public  void afficherDonnees(Intervenant inter) {
+		String salaire = String.valueOf(inter.getSalaire());	
+		String statut = "";
+		System.out.println("Nom : " + inter.nom);
+		System.out.println("Prénom : " + inter.prenom);
+		System.out.println("Salaire : " + salaire);
+		if(inter instanceof Pigiste) {
+			statut = "Pigiste";
+		} else {
+			statut = "Salarié";
+		}
+		System.out.println("Statut : " + statut);
+	}
+
+	@Override
+	public String toString() {
+		return "Intervenant [nom=" + nom + ", prenom=" + prenom + "]";
+	}
 }

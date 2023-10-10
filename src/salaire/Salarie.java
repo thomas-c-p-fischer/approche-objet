@@ -14,7 +14,26 @@ public class Salarie extends Intervenant {
 	}
 	
 	@Override
+	public String toString() {
+		return "Salarie [salaireMensuel=" + salaireMensuel + ", " + super.toString() + "]";
+	}
+
+	@Override
 	public double getSalaire() {
 		return this.salaireMensuel;
+	}
+
+	/**
+	 * @return the salaireMensuel
+	 */
+	public double getSalaireMensuel() {
+		return salaireMensuel;
+	}
+
+	/**
+	 * @param salaireMensuel the salaireMensuel to set
+	 */
+	public void setSalaireMensuel(double salaireMensuel) {
+		this.salaireMensuel = salaireMensuel;
 	}
 }
