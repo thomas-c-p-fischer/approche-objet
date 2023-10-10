@@ -1,4 +1,7 @@
-package entities;
+package essais;
+
+import entities.AdressePostale;
+import entities.Personne;
 
 public class TestPersonne {
 

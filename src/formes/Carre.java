@@ -1,6 +1,6 @@
 package formes;
 
-public class Carre extends Forme {
+public class Carre extends Rectangle {
 	private double longueur;
 	
 	@Override
@@ -17,9 +17,11 @@ public class Carre extends Forme {
 	
 	/**
 	 * @param longueur
+	 * @param largeur
+	 * @param longueur2
 	 */
 	public Carre(double longueur) {
-		super();
+		super(longueur);
 		this.longueur = longueur;
 	}
 

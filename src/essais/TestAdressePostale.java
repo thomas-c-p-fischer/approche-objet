@@ -1,4 +1,6 @@
-package entities;
+package essais;
+
+import entities.AdressePostale;
 
 public class TestAdressePostale {
 

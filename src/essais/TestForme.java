@@ -9,7 +9,7 @@ public class TestForme {
 	public static void main(String[] args) {
 		Cercle cercle = new Cercle(5);
 		Rectangle rectangle = new Rectangle(4.2, 5.2);
-		Carre carre = new Carre(6.6);
+		Carre carre = new Carre(6);
 		
 		
 		

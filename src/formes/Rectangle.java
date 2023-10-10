@@ -25,6 +25,11 @@ public class Rectangle extends Forme {
 		this.longueur = longueur;
 		this.largeur = largeur;
 	}
+	
+	public Rectangle(double cote) {
+        this.longueur = cote;
+        this.largeur = cote;
+    }
 
 	@Override
 	public String toString() {
