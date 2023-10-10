@@ -1,6 +1,6 @@
 package chaines;
 
-import entities.Salarie;
+import salaire.Salarie;
 
 public class ManipulationChaine {
 
