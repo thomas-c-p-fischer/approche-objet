@@ -1,15 +1,15 @@
-package entities;
+package formes;
 
-public class Cercle {
+public class Cercle extends Forme {
 	private double rayon;
 	
 	public double calculPerimetre() {
-		double perimetre = getRayon() / 2;
+		double perimetre = 2 * Math.PI * getRayon();
 		return perimetre;
 	}
 	
 	public double calculSurface() {
-		double surface = Math.PI * Math.pow(getRayon(), 2);
+		double surface = Math.PI * getRayon() * getRayon();
 		return surface;
 	}
 	

@@ -1,6 +1,6 @@
 package essais;
 
-import entities.Cercle;
+import formes.Cercle;
 import utils.CercleFactory;
 
 public class TestCercle {
