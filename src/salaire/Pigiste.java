@@ -25,6 +25,10 @@ public class Pigiste extends Intervenant{
 	public double getSalaire() {
 		return this.nbJoursTravailles * this.salaireParJour;
 	}
+	
+	public String getStatut() {
+		return "pigiste";
+	}
 
 	/**
 	 * @return the nbJoursTravailles
