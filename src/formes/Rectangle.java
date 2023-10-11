@@ -1,6 +1,6 @@
 package formes;
 
-public class Rectangle extends Forme {
+public class Rectangle implements Forme {
 	private double longueur;
 	private double largeur;
 	
