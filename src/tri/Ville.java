@@ -1,14 +1,19 @@
-package entities;
+package tri;
 
-public class Ville {
+public class Ville implements Comparable<Ville> {
 	private String nom;
-	private int nombreHabitants;
+	private Integer nombreHabitants;
+
+	@Override
+	public int compareTo(Ville autreVille) {
+		return this.nombreHabitants.compareTo(autreVille.getNombreHabitants());
+	}
 	
 	/**
 	 * @param nom
 	 * @param nombreHabitants
 	 */
-	public Ville(String nom, int nombreHabitants) {
+	public Ville(String nom, Integer nombreHabitants) {
 		super();
 		this.nom = nom;
 		this.nombreHabitants = nombreHabitants;
@@ -36,14 +41,14 @@ public class Ville {
 	/**
 	 * @return the nombreHabitants
 	 */
-	public int getNombreHabitants() {
+	public Integer getNombreHabitants() {
 		return nombreHabitants;
 	}
 
 	/**
 	 * @param nombreHabitants the nombreHabitants to set
 	 */
-	public void setNombreHabitants(int nombreHabitants) {
+	public void setNombreHabitants(Integer nombreHabitants) {
 		this.nombreHabitants = nombreHabitants;
 	}
 }

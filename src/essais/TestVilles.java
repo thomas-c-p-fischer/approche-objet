@@ -3,7 +3,7 @@ package essais;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import entities.Ville;
+import tri.Ville;
 
 public class TestVilles {
 

@@ -18,12 +18,10 @@ public class ComptagePaysParContinent {
 		HashMap<String, Integer> cpt = new HashMap<String, Integer>();
 		
 		for(Pays p : paysListe) {
-			String continent = p.getContinent();
-			cpt.put(continent, cpt.getOrDefault(continent, 0) + 1);
+			Integer compteur = cpt.getOrDefault(p.getContinent(), 0);
+			compteur++;
+			cpt.put(p.getContinent(), compteur);
 		}
-		for(String continent : cpt.keySet()) {
-			int nbPays = cpt.get(continent);
-			System.out.println(continent + ": " + nbPays + " pays.");
-		}
+		System.out.println(cpt);
 	}
 }

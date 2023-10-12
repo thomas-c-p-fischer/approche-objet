@@ -3,7 +3,7 @@ package maps;
 import java.util.HashMap;
 import java.util.Iterator;
 
-import entities.Ville;
+import tri.Ville;
 
 public class MapVilles {
 
