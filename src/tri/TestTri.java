@@ -23,9 +23,13 @@ public class TestTri {
 		//System.out.println(villes);
 		
 		Collections.sort(villes, new ComparatorHabitant());
-		System.out.println(villes);
+		for(Ville v : villes) {
+			System.out.println(v);
+		}
 		
 		Collections.sort(villes, new ComparatorNom());
-		System.out.println(villes);
+		for(Ville v1 : villes) {
+			System.out.println(v1);
+		}
 	}
 }
