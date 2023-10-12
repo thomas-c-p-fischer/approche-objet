@@ -22,11 +22,15 @@ public class TestTri {
 		
 		//System.out.println(villes);
 		
+		System.out.println("----------Villes classé par ordre d'habitants----------");
+		System.out.println(" ");
 		Collections.sort(villes, new ComparatorHabitant());
 		for(Ville v : villes) {
 			System.out.println(v);
 		}
-		
+		System.out.println(" ");
+		System.out.println("----------Villes classé par ordre alphabétique----------");
+		System.out.println(" ");
 		Collections.sort(villes, new ComparatorNom());
 		for(Ville v1 : villes) {
 			System.out.println(v1);
