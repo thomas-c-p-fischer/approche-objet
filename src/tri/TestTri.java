@@ -26,14 +26,14 @@ public class TestTri {
 		System.out.println(" ");
 		Collections.sort(villes, new ComparatorHabitant());
 		for(Ville v : villes) {
-			System.out.println(v);
+			System.out.println(v.getNom() + " - " + "Nombre d\'habitants: " + v.getNombreHabitants());
 		}
 		System.out.println(" ");
 		System.out.println("----------Villes classé par ordre alphabétique----------");
 		System.out.println(" ");
 		Collections.sort(villes, new ComparatorNom());
 		for(Ville v1 : villes) {
-			System.out.println(v1);
+			System.out.println(v1.getNom() + " - " + "Nombre d\'habitants: " + v1.getNombreHabitants());
 		}
 	}
 }
