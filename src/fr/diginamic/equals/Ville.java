@@ -1,10 +1,19 @@
 package fr.diginamic.equals;
 
+/**
+ * 
+ */
+/**
+ * 
+ */
 public class Ville {
+	/** nom  */
 	private String nom;
+	/** population  */
 	private int population;
 	
-	/**
+
+	/** Constructeur
 	 * @param nom
 	 * @param population
 	 */
@@ -28,29 +37,28 @@ public class Ville {
 		return "Ville [nom=" + nom + ", population=" + population + "]";
 	}
 
-
-	/**
+	/** Getter
 	 * @return the nom
 	 */
 	public String getNom() {
 		return nom;
 	}
 
-	/**
+	/** Setter
 	 * @param nom the nom to set
 	 */
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
 
-	/**
+	/** Getter
 	 * @return the population
 	 */
 	public int getPopulation() {
 		return population;
 	}
 
-	/**
+	/** Setter
 	 * @param population the population to set
 	 */
 	public void setPopulation(int population) {
