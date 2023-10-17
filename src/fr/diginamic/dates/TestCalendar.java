@@ -8,6 +8,7 @@ import java.util.Locale;
 public class TestCalendar {
 
 	public static void main(String[] args) {
+		
 		Calendar calendrier = Calendar.getInstance();
 		calendrier.set(2016, 4, 19, 23, 59, 30);
 		Date date = calendrier.getTime();
@@ -25,19 +26,18 @@ public class TestCalendar {
 		Locale allemagne = Locale.GERMANY;
 		Locale chine = Locale.CHINA;
 		Locale russie = new Locale("ru", "RU");
-		SimpleDateFormat formateurFr = new SimpleDateFormat("EEEE/MMMM/yyyy HH:mm:ss", france);
-		SimpleDateFormat formateurGer = new SimpleDateFormat("EEEE/MMMM/yyyy HH:mm:ss", allemagne);
-		SimpleDateFormat formateurChi = new SimpleDateFormat("EEEE/MMMM/yyyy HH:mm:ss", chine);
-		SimpleDateFormat formateurRu = new SimpleDateFormat("EEEE/MMMM/yyyy HH:mm:ss", russie);
+		SimpleDateFormat formateurFr = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm:ss", france);
+		SimpleDateFormat formateurGer = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm:ss", allemagne);
+		SimpleDateFormat formateurChi = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm:ss", chine);
+		SimpleDateFormat formateurRu = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm:ss", russie);
 		String dateFr = formateurFr.format(date2);
 		String dateGer = formateurGer.format(date2);
 		String dateChi = formateurChi.format(date2);
 		String dateRu = formateurRu.format(date2);
-		System.out.println("France :" + dateFr);
-		System.out.println("Allemagne :" + dateGer);
-		System.out.println("Chine :" + dateChi);
-		System.out.println("Russie :" + dateRu);
+		System.out.println("France : " + dateFr);
+		System.out.println("Allemagne : " + dateGer);
+		System.out.println("Chine : " + dateChi);
+		System.out.println("Russie : " + dateRu);
 		
 	}
-
 }
