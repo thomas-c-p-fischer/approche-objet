@@ -1,17 +1,12 @@
 package fr.diginamic.testenumeration;
 
-/**
- * 
- */
-/**
- * 
- */
 public class Ville {
+	
 	/** nom  */
 	private String nom;
 	/** population  */
 	private int population;
-	
+	/** continent */
 	private Continents continent;
 
 	/** Constructeur
